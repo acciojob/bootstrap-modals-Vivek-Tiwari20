@@ -3,84 +3,44 @@
 <html>
  
 <head>
-<title>Hello, world!</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
  
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="container">
-  <h2>Bootstrap Carousel</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- here carousel is changing the slide suddenly without any slide but slide is using for smooth transition or slide -->
-  
-  <!-- Wrapper for slides -->
-  <!-- which will wrap the slides instead of list one by one -->
-  <div class="carousel-inner">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<button id="open-modal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newton-modal">
+		Launch newton modal
+	</button>
+	<div class="modal fade" id="newton-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">New Modal</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+					cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+					Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+					nulla.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
  
  
-  <div class="item first-slide">
-  <img src="https://image.shutterstock.com/image-vector/shopping-online-on-website-mobile-260nw-1206570103.jpg" id ="first_image" alt="Los Angeles" style="width:100%;">
-  <div class="carousel-caption">
-  <h3>First Slide</h3>
-  <p>This is first slide!</p>
-  </div>
-  </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
  
  
-  <div class="item second-slide">
-  <img src="https://image.freepik.com/free-vector/digital-marketing-concept-online-shopping-mobile-application_68971-367.jpg" id ="second_image" alt="Chicago" style="width:100%;">
-  <div class="carousel-caption">
-  <h3>Second Slide</h3>
-  <p>This is second slide!</p>
-  </div>
-  </div>
-  
-  <div class="item active third-slide">
-  <img src="https://image.shutterstock.com/image-photo/young-student-watching-lesson-online-260nw-1676998306.jpg" id ="third_image" alt="New York" style="width:100%;">
-  <div class="carousel-caption">
-  <h3>Third Slide</h3>
-  <p>This is third slide!</p>
-  </div>
-  </div>
- 
- 
-  <div class="item fourth-slide">
-  <img src="https://lh3.googleusercontent.com/proxy/IAgqXzs8j2pQrGYALfNmFGbn_O2Of6Bc0FGWLVrTJCge30MMXZlQdkYviNExlbgJsYCmdhJkIDLbMEATXQYh8zouE6CCICkV-hSUKpCH-8uKYs5r5RInD8tb1KZWVw" id ="fourth_image" alt="New York" style="width:100%;">
-  <div class="carousel-caption">
-  <h3>Fourth Slide</h3>
-  <p>This is fourth slide!</p>
-  </div>
-  </div>
- 
- 
-  <div class="item fifth-slide">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT3TmYe2w7n0B-5juuJFlR_9duENGn4QEEYSuzXvaPVViYnHYfYYhvccgW5dqV_6p-OKg&usqp=CAU" id ="fifth_image" alt="New York" style="width:100%;">
-  <div class="carousel-caption">
-  <h3>Fifth Slide</h3>
-  <p>This is fifth slide!</p>
-  </div>
-  </div>
-  
-  </div>
- 
- 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left"></span>
-  <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-  <span class="sr-only">Next</span>
-  </a>
-  </div>
- </div>
-	
- 
- 
-    <script type="text/javascript" src="./script.js">
-</script>
+	<script type="text/javascript" src="./script.js">
+	</script>
  
 </body>
  
